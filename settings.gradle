@@ -1,0 +1,2 @@
+rootProject.name = "Appy High Assignment"
+include ':app'
