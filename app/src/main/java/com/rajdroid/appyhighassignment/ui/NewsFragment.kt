@@ -77,7 +77,6 @@ class NewsFragment : Fragment(),NewsAdapter.onitemClick  {
                 Resource.Status.SUCCESS -> {
                     if (!it.data.isNullOrEmpty())
                     {
-                        viewmodel.delete()
                         list.clear()
                         list.addAll(ArrayList(it.data))
                         adapter = NewsAdapter(ArrayList(it.data),this@NewsFragment)
@@ -99,7 +98,6 @@ class NewsFragment : Fragment(),NewsAdapter.onitemClick  {
                 Resource.Status.SUCCESS -> {
                     if (!it.data.isNullOrEmpty())
                     {
-                        viewmodel.delete()
                         list.clear()
                         list.addAll(ArrayList(it.data))
                         adapter = NewsAdapter(ArrayList(it.data),this@NewsFragment)
