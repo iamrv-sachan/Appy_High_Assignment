@@ -44,10 +44,13 @@ class NewsFragment : Fragment(),NewsAdapter.onitemClick  {
 
         binding.bannerAdView.loadAd(AdRequest.Builder().build())
 
+
+
         list = ArrayList()
         var f:Int =0
         setupObservers1()
         binding.btnChange.setOnClickListener{
+            Log.i("aaaaaaa",f.toString())
             if(f==0)
             {
                 f=1
@@ -74,10 +77,13 @@ class NewsFragment : Fragment(),NewsAdapter.onitemClick  {
                 Resource.Status.SUCCESS -> {
                     if (!it.data.isNullOrEmpty())
                     {
+                        viewmodel.delete()
+                        list.clear()
                         list.addAll(ArrayList(it.data))
                         adapter = NewsAdapter(ArrayList(it.data),this@NewsFragment)
                         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
                         binding.recycler.adapter = adapter
+                        adapter.notifyDataSetChanged()
                     }
                 }
                 Resource.Status.ERROR ->
@@ -93,10 +99,13 @@ class NewsFragment : Fragment(),NewsAdapter.onitemClick  {
                 Resource.Status.SUCCESS -> {
                     if (!it.data.isNullOrEmpty())
                     {
+                        viewmodel.delete()
+                        list.clear()
                         list.addAll(ArrayList(it.data))
                         adapter = NewsAdapter(ArrayList(it.data),this@NewsFragment)
                         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
                         binding.recycler.adapter = adapter
+                        adapter.notifyDataSetChanged()
                     }
                 }
                 Resource.Status.ERROR ->

@@ -21,4 +21,9 @@ class Repository  @Inject constructor(val newsRetro: NewsRetro, val newsDao: New
         networkCall = { newsRetro.getAllNews("USA") },
         saveCallResult = { newsDao.insertAll(it.articles) }
     )
+
+    suspend fun deleteAll()
+    {
+        newsDao.deleteAll()
+    }
 }

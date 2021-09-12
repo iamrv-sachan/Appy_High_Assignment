@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "340959846102",
+    "project_id": "appy-high-assignment",
+    "storage_bucket": "appy-high-assignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340959846102:android:965ea89b88f78b0240f377",
+        "android_client_info": {
+          "package_name": "com.rajdroid.appyhighassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340959846102-6n6mi1je6avair2ojkb2761f5389t1be.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rajdroid.appyhighassignment",
+            "certificate_hash": "f86069ea3bd2f301e40c491aba765045407715b2"
+          }
+        },
+        {
+          "client_id": "340959846102-0im9an7ds14q8lvqv1e6rctet7idgv0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDNxk_Nhj2GGX-T2zVKlI-fay6rctJ_FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340959846102-0im9an7ds14q8lvqv1e6rctet7idgv0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
